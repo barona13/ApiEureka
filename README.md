@@ -1,5 +1,5 @@
-# creación de servicios eureka y usuarios
+# CREACION DE SERVICIOS EUREKA Y USUARIOS
 
-## conexion a base de datos postgres
-## encontraras el servicio Usuarios
-## al igual que el servicio Eureka
+## Conexion a base de datos postgres
+## Encontraras el servicio Usuarios
+## Al igual que el servicio Eureka
