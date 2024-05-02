@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.barona.common.usuario.models.entity.Alumno;
-import com.barona.curso.models.entity.Curso;
+import com.barona.common.usuario.models.entity.Curso;
 import com.barona.curso.service.CursoService;
 
 

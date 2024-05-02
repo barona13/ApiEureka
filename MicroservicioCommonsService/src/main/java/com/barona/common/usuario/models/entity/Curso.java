@@ -1,4 +1,4 @@
-package com.barona.curso.models.entity;
+package com.barona.common.usuario.models.entity;
 
 import java.util.ArrayList;
 import java.util.Date;
