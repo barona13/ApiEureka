@@ -1,38 +1,38 @@
-package co.com.barona.microservicecommuns.MicroservicioCommuns.service;
-
+package com.co.barona.usuarios.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.CrudRepository;
+
+import com.barona.common.usuario.models.entity.Alumno;
+import com.co.barona.usuarios.repository.AlumnoRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
 
+@Service
+public class AlumnoServiceImpl implements AlumnoService{
 
-public class CommonServiceImpl<E, R extends CrudRepository<E, Long>> implements CommonService<E> {
-
-    @Autowired
-    private R dao;
+	@Autowired
+	AlumnoRepository dao;
 
     @Override
     @Transactional(readOnly = true)
-    public Iterable<E> findAll(){
-
+    public Iterable<Alumno> findAll(){
         return dao.findAll();
     }
 
     @Override
     @Transactional(readOnly = true)
-    public Optional<E>findById(Long id){
+    public Optional<Alumno>findById(Long id){
         return Optional.empty();
     }
 
     @Override
     @Transactional
-    public E save(E entity){
+    public Alumno save(Alumno alumno){
 
-        return dao.save(entity);
+        return null;
     }
 
     @Override
@@ -41,6 +41,5 @@ public class CommonServiceImpl<E, R extends CrudRepository<E, Long>> implements 
 
         dao.deleteById(id);
     }
-
 
 }
